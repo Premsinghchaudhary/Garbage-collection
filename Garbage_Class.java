@@ -16,14 +16,14 @@ class Gobal // This class to store a global variable ......
 public class Garbage_Class 	// main class 
 {  
 	static Scanner sc = new Scanner(System.in);
-	static int a;
+	static int a;//varaible declared......
 	public static void main(String[] args)  // main method
 	{
 		Garbage_Class ob = new Garbage_Class(); // creating object of our class
 		ob = null;    	// passing variable null
 		System.gc();  	// implicitly calling finalize method
 		fun();  	// calling fun method
-		fun2();  	// calling fun2 method
+		fun1();  	// calling fun1 method
 		boxing(); 	// calling boxing method
 		unboxing();	// calling unboxing method
 		 
@@ -36,7 +36,7 @@ public class Garbage_Class 	// main class
 		g.display();         // calling display method
 	}
 	
-	static void fun2()
+	static void fun1()
 	{
 		Gobal g = new Gobal();  // creating same reference object here that means it is use less here because one object is already created by same reference
 		g.display();	      // calling by same object display method
